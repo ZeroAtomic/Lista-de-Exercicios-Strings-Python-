@@ -1,1 +1,1 @@
-# Lista-de-Exerc-cios-Strings-Python-
+# Lista-de-Exercicios-Strings-Python-
