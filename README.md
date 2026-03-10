@@ -32,10 +32,51 @@ for letra in letra1:
 
 
 4. Nome em escada: Mostre o nome em formato de escada crescente (F, FU, FUL...).
+letra1 = (input())
+
+for p in range(1, len(letra1) +1 ):
+  print(letra1[:p])
 
 5. Escada invertida: Mostre o nome em escada decrescente.
 
+letra1 = (input())
+n = len(letra1)
+
+for p in range(1, len(letra1) +1 ):
+
+   print(letra1[:-p])
+
 6. Data por extenso: Leia uma data (dd/mm/aaaa) e mostre no formato '29 de Outubro de 1973'.
+
+print('Informe uma data.')
+dia = (input('Informe um dia DD: '))
+mes = (input('Informe um mes MM: '))
+ano = (input('Informe um ano MM: '))
+
+if mes == "01":
+    print(f'{dia} de Janeiro de {ano}')
+elif mes == "02":
+    print(f'{dia} de Fevereiro de {ano}')
+elif mes == "03":
+    print(f'{dia} de Março de {ano}')
+elif mes == "04":
+    print(f'{dia} de Abril de {ano}')
+elif mes == "05":
+    print(f'{dia} de Maio de {ano}')
+elif mes == "06":
+    print(f'{dia} de Junho de {ano}')
+elif mes == "07":
+    print(f'{dia} de Julho de {ano}')
+elif mes == "08":
+    print(f'{dia} de Agosto de {ano}')
+elif mes == "09":
+    print(f'{dia} de Setembro de {ano}')
+elif mes == "10":
+    print(f'{dia} de Outubro de {ano}')
+elif mes == "11":
+    print(f'{dia} de Novembro de {ano}')
+elif mes == "12":
+    print(f'{dia} de Dezembro de {ano}')
 
 7. Contar espaços e vogais: Dada uma frase, conte quantos espaços existem e quantas vezes
 aparecem as vogais.
