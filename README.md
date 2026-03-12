@@ -80,12 +80,32 @@ elif mes == "12":
 
 7. Contar espaços e vogais: Dada uma frase, conte quantos espaços existem e quantas vezes
 aparecem as vogais.
+letra = "Professor odair é o melhor professor da faculdade "
+o = 0
+e = letra.count(' ')
+for i in letra:
+    #i = i.lower()
+    if i == 'a' or i == "e" or i =='i' or i =='o' or i=='u': 
+        o += 1
+      
+print(f'Voce teve {o} Vogais')
+print(f'voce teve {e} espaçõs' )
+
+
 
 8. Palíndromo: Leia uma sequência de caracteres e informe se é um palíndromo.
 
+
+
+
+
 9. Verificação de CPF: Leia um CPF no formato xxx.xxx.xxx-xx e valide os dígitos verificadores.
 
+
+
 10. Número por extenso: Leia um número até 99 e mostre-o por extenso.
+
+
 
 11. Jogo da Forca: Desenvolva um jogo simples da forca usando uma lista de palavras.
 
