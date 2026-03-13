@@ -202,7 +202,40 @@ else:
 
 12. Corrigir telefone: Leia um telefone com 7 ou 8 dígitos e ajuste adicionando o '3' se necessário.
 
+telefone = input("Digite o telefone: ")
+
+if len(telefone) == 7:
+    novo_telefone = "3" + telefone
+    print(f"Telefone corrigido: {novo_telefone}")
+elif len(telefone) == 8:
+    print(f"Telefone correto: {telefone}")
+else:
+    print("Número inválido! Digite 7 ou 8 dígitos.")
+
 13. Palavra embaralhada: Mostre uma palavra com letras embaralhadas e permita que o usuário
 adivinhe.
 
+palavra_correta = "python"
+palavra_embaralhada = "typhon" 
+
+print(f"A palavra embaralhada é: {palavra_embaralhada}")
+
+tentativa = input("Qual é a palavra correta? ").lower()
+
+if tentativa == palavra_correta:
+    print("Parabéns! Você acertou.")
+else:
+    print(f"Errado! A palavra era {palavra_correta}.")
+
 14. Leet Speak: Leia um texto e converta para a escrita estilo leet (ex: 1337).
+
+texto = input("Digite um texto para converter: ").upper()
+
+texto = texto.replace("A", "4")
+texto = texto.replace("E", "3")
+texto = texto.replace("I", "1")
+texto = texto.replace("O", "0")
+texto = texto.replace("T", "7")
+texto = texto.replace("S", "5")
+
+print(f"Texto em Leet Speak: {texto}")
