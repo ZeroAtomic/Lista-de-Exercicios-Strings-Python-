@@ -168,6 +168,38 @@ else:
 
 11. Jogo da Forca: Desenvolva um jogo simples da forca usando uma lista de palavras.
 
+palavra_secreta = "python"
+letras_acertadas = ["_"] * len(palavra_secreta)
+tentativas = 6
+letras_digitadas = []
+
+while tentativas > 0 and "_" in letras_acertadas:
+    print(f"\nPalavra: {' '.join(letras_acertadas)}")
+    print(f"Tentativas restantes: {tentativas}")
+    
+    chute = input("Digite uma letra: ").lower()
+
+    if chute in letras_digitadas:
+        print("Você já tentou essa!")
+        continue
+
+    letras_digitadas.append(chute)
+
+    if chute in palavra_secreta:
+        indice = 0
+        for letra in palavra_secreta:
+            if chute == letra:
+                letras_acertadas[indice] = chute
+            indice += 1
+    else:
+        tentativas -= 1
+        print("Errou!")
+
+if "_" not in letras_acertadas:
+    print(f"\nGanhou! A palavra era: {palavra_secreta}")
+else:
+    print(f"\nPerdeu! A palavra era: {palavra_secreta}")
+
 12. Corrigir telefone: Leia um telefone com 7 ou 8 dígitos e ajuste adicionando o '3' se necessário.
 
 13. Palavra embaralhada: Mostre uma palavra com letras embaralhadas e permita que o usuário
